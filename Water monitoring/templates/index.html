@@ -1,0 +1,34 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Water Requirement Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Predict Water Requirement for Tomorrow</h2>
+    <form action="/predict" method="post">
+        <div class="input-field">
+            <img src="{{ url_for('static', filename='images/temperature.png') }}" alt="Temperature">
+            <label>Temperature:</label><br>
+            <input type="text" name="temperature"><br>
+        </div>
+        <div class="input-field">
+            <img src="{{ url_for('static', filename='images/humidity.png') }}" alt="Humidity">
+            <label>Rainfall (mm):</label><br>
+            <input type="text" name="rainfall"><br>
+        </div>
+        <div class="input-field">
+            <img src="{{ url_for('static', filename='images/soil_moisture.png') }}" alt="Soil Moisture">
+            <label>Soil Moisture:</label><br>
+            <input type="text" name="soil_moisture"><br>
+        </div>
+        <div class="input-field">
+            <label>Crop Type:</label><br>
+            <input type="text" name="crop_type"><br><br>
+        </div>
+        <input type="submit" value="Predict">
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>

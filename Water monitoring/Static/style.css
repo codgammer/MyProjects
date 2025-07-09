@@ -1,0 +1,42 @@
+/* static/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    padding: 50px;
+    border: 1px solid #ccc;
+}
+
+h2 {
+    color: #333;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    width: 200px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+  

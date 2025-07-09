@@ -1,2 +1,2 @@
 # MyProjects
-This are the project i have done in college
+These are the projects that i have done in college

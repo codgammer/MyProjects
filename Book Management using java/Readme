@@ -1,1 +1,67 @@
 This is a Huge file so i have uploaded it in .Zip
+# 📚 Book Management API
+
+A simple Spring Boot RESTful API for managing books using Create, Read, Update, and Delete (CRUD) operations.
+
+
+
+🚀 Tech Stack
+- **Java 17**
+- **Spring Boot**
+- **Spring Data JPA**
+- **MySQL / H2 (in-memory)**
+- **Maven**
+- **Lombok**
+- **REST APIs**
+
+
+ 📂 Project Structure
+
+book-management/
+├── controller/ # REST API endpoints
+├── entity/ # JPA entities
+├── repository/ # Data access layer
+├── service/ # Business logic
+├── resources/
+│ ├── application.properties
+├── BookApplication.java
+├── pom.xml
+
+yaml
+Copy
+Edit
+
+---
+
+## 🌐 API Endpoints
+
+| Method | Endpoint        | Description             |
+|--------|------------------|-------------------------|
+| GET    | /api/books       | Get all books           |
+| POST   | /api/books       | Add a new book          |
+| PUT    | /api/books       | Update existing book    |
+| DELETE | /api/books/{id}  | Delete book by ID       |
+
+---
+
+## ⚙️ How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/book-management.git
+   cd book-management
+Configure src/main/resources/application.properties with your MySQL credentials:
+
+properties
+
+spring.datasource.url=jdbc:mysql://localhost:3306/bookdb
+spring.datasource.username=root
+spring.datasource.password=your_password
+Run the application:
+
+mvn spring-boot:run
+
+✅ Requirements
+Java 17 or higher
+Maven
+MySQL server (or switch to H2 for testing)

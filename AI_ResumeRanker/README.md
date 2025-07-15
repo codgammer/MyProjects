@@ -59,4 +59,36 @@ A full-stack web application that uses OpenAI's GPT API to intelligently rank a 
 
 ```bash
 cd backend
+# Add your OpenAI API key in application.properties or application.yml:
+# openai.api.key=YOUR_API_KEY
+mvn clean install
+mvn spring-boot:run
+
+Backend runs at http://localhost:8080
+
+3. Setup Frontend (React)
+bash
+Copy
+Edit
+cd ../frontend
+npm install
+npm start
+Frontend runs at http://localhost:3000
+
+🌐 API Usage (Internally via Axios)
+POST /api/rank
+
+json
+Copy
+Edit
+{
+  "jobDescription": "Your JD here...",
+  "resumeText": "Your Resume here..."
+}
+Response:
+AI-generated feedback and match score (text).
+
+
+
+
 

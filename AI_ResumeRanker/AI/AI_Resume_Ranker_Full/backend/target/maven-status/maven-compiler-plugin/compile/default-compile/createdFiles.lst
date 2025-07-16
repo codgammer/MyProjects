@@ -1,0 +1,4 @@
+com\resumeranker\service\ResumeRankerService.class
+com\resumeranker\model\ResumeRequest.class
+com\resumeranker\controller\ResumeController.class
+com\resumeranker\ResumeRankerApplication.class
